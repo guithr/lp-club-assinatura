@@ -1,0 +1,53 @@
+section.mistery {
+  max-width: 90rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0 7.5rem;
+  text-align: center;
+  & p {
+    position: relative;
+    max-width: 71rem;
+    color: var(--text-body);
+    & span {
+      color: var(--blue-light);
+    }
+  }
+
+  & img {
+    position: absolute;
+  }
+  & img[src*="ouija"] {
+    width: 4.5625rem;
+    height: 4.5625rem;
+    left: 1rem;
+    bottom: -5rem;
+    transform: rotate(95deg);
+    transition: transform 400ms ease;
+    &:hover {
+      transform: scale(1.1) rotate(105deg);
+    }
+  }
+
+  & img[src*="ball"] {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    right: -1.5rem;
+    bottom: -4rem;
+    transform: rotate(-15deg);
+    transition: transform 400ms ease;
+    &:hover {
+      transform: scale(1.1) rotate(-5deg);
+    }
+  }
+  & img[src*="book"] {
+    width: 5rem;
+    height: 5rem;
+    left: 50%;
+    top: -5rem;
+    transform: rotate(25deg);
+    transition: transform 400ms ease;
+    &:hover {
+      transform: scale(1.1) rotate(35deg);
+    }
+  }
+}

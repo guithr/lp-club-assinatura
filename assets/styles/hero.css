@@ -1,10 +1,20 @@
 section.hero {
-  background: url(../images/bg/hero-background.png);
+  background: url(../images/teste.svg), url(../images/bg/hero-background.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 110vh;
-  margin-bottom: 6rem;
+  margin-bottom: 13.125rem;
+  position: relative;
+  & > img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  & > img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+  }
   & .hero-desc {
     margin-top: 10.25rem;
     display: flex;
