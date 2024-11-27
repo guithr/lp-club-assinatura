@@ -1,0 +1,24 @@
+section.hero {
+  background: url(../images/bg/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 110vh;
+  margin-bottom: 6rem;
+  & .hero-desc {
+    margin-top: 10.25rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    & h1 {
+      color: var(--text-title);
+      max-width: 41rem;
+    }
+    & p {
+      color: var(--text-body);
+      max-width: 35.5rem;
+    }
+  }
+}

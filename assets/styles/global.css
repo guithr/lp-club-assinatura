@@ -101,3 +101,7 @@ a {
     background-color: var(--blue-mid);
   }
 }
+
+body {
+  background: var(--shape-background);
+}
