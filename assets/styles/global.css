@@ -65,8 +65,12 @@
 }
 
 /* btn */
-.btn {
+button {
   font: 700 0.875rem / normal var(--ff-base);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--text-title);
 }
 
 /* link */
@@ -78,4 +82,22 @@
 .tag {
   font: 700 0.625rem / normal var(--ff-base);
   letter-spacing: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-primary {
+  background-color: var(--pink-dark);
+  &:hover {
+    background-color: var(--pink-base);
+  }
+}
+.btn-secondary {
+  background-color: var(--blue-dark);
+  &:hover {
+    background-color: var(--blue-mid);
+  }
 }
